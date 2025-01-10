@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=Indie+Flower&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.nav-icon {
+  width: 60px;
+  transition: filter 0.2s ease; /* Smooth transition for hover effect */
+}
+
+.nav-icon:hover {
+  filter: grayscale(100%); /* Makes the image completely black and white */
+}
+
+.navbar {
+  width: 100%;
+  height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space out navbar brand and links */
+  padding: 0 20px; /* Add padding to the left and right */
+  background: #EAF1EA;
+  color: #212522;
+  box-sizing: border-box;
+}
+
+.navbar-brand {
+  font-family: "Chivo Mono";
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px; /* Add space between the links */
+}
+
+.nav-link {
+  color: #151515; /* Black text */
+  font-family: "Chivo Mono";
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none; /* Remove underline */
+  transition: color 0.2s ease; /* Smooth color transition */
+}
+
+.nav-link:hover {
+  color: #8CDEDB; /* Bright blue on hover */
+}

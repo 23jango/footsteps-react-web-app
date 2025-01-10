@@ -1,26 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+// import About from "./About";
+// import Events from "./Events";
+// import Membership from "./Membership";
+//import FsNav from "./FsNavigation";
+import Home from "./Home";
+import ReactDOM from 'react-dom/client';
+import { HashRouter, Route, Routes, Navigate } from "react-router-dom";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <HashRouter>
+      <div>
+        {/* <FsNavigation /> */}
+        <Routes>
+          {/* Redirect "/" to "/home" */}
+          <Route path="/" element={<Navigate to="/home" />} />
+          {/* Define the "home" route */}
+          <Route path="/home" element={<Home />} />
+
+
+          
+          {/* <Route path="/About/*" element={<About />} />
+          <Route path="/Events/*" element={<Events />} />
+          <Route path="/Membership/*" element={<Membership />} /> */}
+        </Routes>
+      </div>
+    </HashRouter>
   );
 }
-
 export default App;
