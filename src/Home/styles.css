@@ -60,10 +60,6 @@
 }
 
 
-@keyframes spin {
-
-}
-
 #vital-announcement {
   background: #006362;
   width: 100%;
@@ -103,13 +99,30 @@
 
 #fs-description {
   width: 90%; /* Makes it responsive */
-  max-width: 800px; /* Prevents it from getting too wide */
   background-color: #1DBD71; /* Green box */
   border-radius: 15px; /* Rounded corners */
   padding: 20px; /* Adds spacing inside the box */
   margin: 20px auto; /* Centers it and adds spacing */
   text-align: center; /* Centers the text */
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+
+  animation-duration: 2s;
+  animation-name: spin;
+}
+
+@keyframes spin {
+  0% {
+
+  }
+  50% {
+    scale: 1.5;
+    transform: rotate(0);  
+    border-radius: 0;
+  }
+  100% {
+    /* transform: rotate(360deg); */
+    scale: 1;
+  }
 }
 
 #fs-mission-title {
@@ -124,4 +137,17 @@
   font-size: clamp(14px, 3vw, 18px); /* Responsive font size */
   color: #fff; /* White text for readability */
   line-height: 1.6; /* Increases readability */
+}
+
+#welcome-bg {
+  width: 100%;
+  background-color: #8CDEDB;
+  padding: 40px 0;
+  margin: 0 auto;
+}
+
+#home-bg {
+  width: 100%;
+  background-color: #8CDEDB;
+  margin: 0 auto;
 }

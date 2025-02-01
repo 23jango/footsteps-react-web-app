@@ -23,9 +23,11 @@ export default function Home() {
         </h1>
       </div> */}
 
-      <Link to="/" className="nav-link">
-        <img src="/pics/Group 8.png" alt="Home" className="home-header-img" />
-      </Link>
+      <div id="home-bg">
+        <Link to="/" className="nav-link">
+          <img src="/pics/Group 8 (1).png" alt="Home" className="home-header-img" />
+        </Link>
+      </div>
       <div id="parent-org">
         <p>
           Check out our parent organization, <a id="insp-link"
@@ -39,6 +41,25 @@ export default function Home() {
         </p>
 
       </div>
+      <div id="welcome-bg">
+        <div id="fs-description">
+          <h1 id="fs-mission-title">
+            Welcome to Footsteps NEU!
+          </h1>
+          <p id="fs-mission-description">
+            We are a Northeastern University Organization supported by Inspire Curiosity dedicated to mentoring, inspiring, and growing the interest for STEM careers for primary and secondary students. Join to be part of our mentors or our mentees! We want to make you feel at home, and we are so happy you are here with us! more info, dates, important updates,
+          </p>
+          <p id="fs-mission-description">
+            With love, the footsteps team
+          </p>
+        </div>
+        <div>
+          <button type="submit" className="btn btn-primary">
+            Sign up! </button>
+        </div>
+
+      </div>
+
 
     </div>
   );
