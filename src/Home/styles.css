@@ -2,10 +2,126 @@
 
 #fs-header {
   width: 100%;
-  height: 700px;
-  background: #8CDEDB;
+  height: 450px;
+  background-color: #8CDEDB;
   color: #151515;
   font-family: "Climate Crisis";
-  font-size: 80px;
+  font-size: 60px;
   text-align: right;
+}
+
+.home-header-img {
+  width: 100%;
+}
+
+#fs-header-about {
+  width: 100%;
+  height: 400px;
+  background-color: #8CDEDB;
+  color: #151515;
+  font-family: "Climate Crisis";
+  font-size: 60px;
+  text-align: right;
+}
+
+#fs-about-title {
+  width: 90%; /* Makes width flexible based on screen size */
+  max-width: 1100px; /* Prevents it from getting too wide on large screens */
+  height: auto; /* Allows height to adjust dynamically */
+  flex-shrink: 0;
+  font-size: clamp(24px, 15vw, 100px); /* Adjusts font size based on screen size */
+  margin: 0 auto; /* Centers the text */
+  text-align: center; /* Ensures readability */
+  line-height: 1.2; /* Improves readability */
+}
+
+#fs-home-title {
+  width: 90%; /* Makes width flexible based on screen size */
+  max-width: 1500px; /* Prevents it from getting too wide on large screens */
+  height: auto; /* Allows height to adjust dynamically */
+  flex-shrink: 0;
+  font-size: clamp(24px, 15vw, 100px); /* Adjusts font size based on screen size */
+  margin: 0 auto; /* Centers the text */
+  text-align: right; /* Ensures readability */
+  line-height: 1.2; /* Improves readability */
+}
+
+#fs-home-title-chivo {
+  width: 90%; /* Makes width flexible based on screen size */
+  max-width: 1500px; /* Prevents it from getting too wide on large screens */
+  height: auto; /* Allows height to adjust dynamically */
+  flex-shrink: 0;
+  font-size: clamp(24px, 15vw, 70px); /* Adjusts font size based on screen size */
+  margin: 0 auto; /* Centers the text */
+  text-align: rights; /* Ensures readability */
+  line-height: 1.2; /* Improves readability */
+  font-family: "Chivo Mono";
+  font-size: 60px;
+}
+
+
+@keyframes spin {
+
+}
+
+#vital-announcement {
+  background: #006362;
+  width: 100%;
+  height: 50px;
+  color: #EAF1EA;
+  font-family: "Chivo Mono";
+  font-size: 18px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+#vital-announcement h3, 
+#fs-header h1 {
+  margin: 0; /* Remove default margin from the heading tags */
+}
+
+#parent-org {
+  background: #006362;
+  width: 100%;
+  height: 50px;
+  color: #EAF1EA;
+  font-family: "Chivo Mono";
+  font-size: 18px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;;
+}
+
+#insp-link {
+  color: #EAF1EA;
+  font-size: 18px;
+}
+#insp-link:hover {
+  color: #8CDEDB; /* Bright blue on hover */
+}
+
+
+#fs-description {
+  width: 90%; /* Makes it responsive */
+  max-width: 800px; /* Prevents it from getting too wide */
+  background-color: #1DBD71; /* Green box */
+  border-radius: 15px; /* Rounded corners */
+  padding: 20px; /* Adds spacing inside the box */
+  margin: 20px auto; /* Centers it and adds spacing */
+  text-align: center; /* Centers the text */
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+#fs-mission-title {
+  font-family: "Chivo Mono", sans-serif; /* Mission title font */
+  font-size: clamp(24px, 5vw, 40px); /* Responsive font size */
+  color: #006362; /* Dark text for contrast */
+  margin-bottom: 10px; /* Adds spacing */
+}
+
+#fs-mission-description {
+  font-family: "Chivo Mono", monospace; /* Mission description font */
+  font-size: clamp(14px, 3vw, 18px); /* Responsive font size */
+  color: #fff; /* White text for readability */
+  line-height: 1.6; /* Increases readability */
 }

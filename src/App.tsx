@@ -1,7 +1,7 @@
 import React from "react";
-// import About from "./About";
-// import Events from "./Events";
-// import Membership from "./Membership";
+import About from "./About";
+import Events from "./Events";
+import Membership from "./Membership";
 //import FsNav from "./FsNavigation";
 import Home from "./Home";
 import ReactDOM from 'react-dom/client';
@@ -16,7 +16,9 @@ function App() {
           <Route path="/" element={<Navigate to="/home" />} />
           {/* Define the "home" route */}
           <Route path="/home" element={<Home />} />
-
+          <Route path="/members" element={<Membership />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/events" element={<Events />} />
 
           
           {/* <Route path="/About/*" element={<About />} />
